@@ -15,9 +15,9 @@ function playGame() {
 
 //create fuction to generate the computer choices
  function generateComputerChoice(){
-     //console.log("Computer Choice")
+     //document.write("Computer Choice")
      computerChoice = Math.floor(Math.random()*3);
-     console.log(computerChoice)
+     //document.write(computerChoice + " " )
      if(computerChoice === 0){
          computerChoice = "R"
 
@@ -30,46 +30,46 @@ function playGame() {
          computerChoice = "S"
 
      };
-     console.log("computer choice " + '' + computerChoice)
+     document.write("Computer choice is: " + "  " + computerChoice +"<br>")
      checkWinner();
  }
 
 
  function checkWinner(){
-  console.log("user choice " + '' + userChoice);
+  document.write("You Chose:  " + "  " +  userChoice +"<br>");
  if (userChoice === computerChoice){
      
-    console.log("Its a tie");
+    document.write(" Its a tie" +"<br>");
 
  }
  if (userChoice === "R" &&  computerChoice === "P"){
      
-    console.log("Computer Wins");
+    document.write(" Computer Wins");
 
  }
  if (userChoice === "R" &&  computerChoice === "S"){
      
-    console.log("You win");
+    document.write(" You win");
 
  }
  if (userChoice === "P" &&  computerChoice === "R"){
      
-    console.log("You win");
+    document.write(" You win");
 
  }
  if (userChoice === "S" &&  computerChoice === "R"){
      
-    console.log("Computer Wins");
+    document.write(" Computer Wins");
 
  }
  if (userChoice === "P" &&  computerChoice === "S"){
      
-    console.log("Computer Wins");
+    document.write(" Computer Wins");
 
  }
  if (userChoice === "S" &&  computerChoice === "P"){
      
-    console.log("You Wins");
+    document.write(" You Wins");
 
  }
 }
